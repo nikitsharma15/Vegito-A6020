@@ -108,47 +108,37 @@
 
 			compatible = "qcom,gpu-pwrlevels";
 			
+			/* ### Jedna dodatkowa częstotliwość na próbę, coby nie spalić grafiki ### */
 			qcom,gpu-pwrlevel@0 {
 				reg = <0>;
-				qcom,gpu-freq = <650000000>;
-				qcom,bus-freq = <6>;
-			};
-			
-			qcom,gpu-pwrlevel@1 {
-				reg = <1>;
-				qcom,gpu-freq = <600000000>;
-				qcom,bus-freq = <5>;
-			};
-			
-			qcom,gpu-pwrlevel@2 {
-				reg = <2>;
 				qcom,gpu-freq = <550000000>;
 				qcom,bus-freq = <4>;
 			};
 
-			/* *** Fabryczna częstotliwość pomniejszona o 5 MHz *** */
-			qcom,gpu-pwrlevel@3 {
-				reg = <3>;
+			/* ### Fabryczna częstotliwość pomniejszona o 5 MHz ### */
+			qcom,gpu-pwrlevel@1 {
+				reg = <1>;
 				qcom,gpu-freq = <460000000>;
 				qcom,bus-freq = <3>;
 			};
 
-			qcom,gpu-pwrlevel@4 {
-				reg = <4>;
+			qcom,gpu-pwrlevel@2 {
+				reg = <2>;
 				qcom,gpu-freq = <400000000>;
 				qcom,bus-freq = <2>;
 			};
 			
-			/* *** Zmienione z fabrycznych 220 na 200 MHz *** */
-			qcom,gpu-pwrlevel@5 {
-				reg = <5>;
+			/* ### Zmienione z fabrycznego 220 na 200 MHz ### */
+			qcom,gpu-pwrlevel@3 {
+				reg = <3>;
 				qcom,gpu-freq = <200000000>;
 				qcom,bus-freq = <1>;
 			};
 
-			qcom,gpu-pwrlevel@6 {
-				reg = <6>;
-				qcom,gpu-freq = <19200000>;
+			/* ### Zmienione z fabrycznego 19,2 na równe 20 MHz ### */
+			qcom,gpu-pwrlevel@4 {
+				reg = <4>;
+				qcom,gpu-freq = <20000000>;
 				qcom,bus-freq = <0>;
 			};
 		};
