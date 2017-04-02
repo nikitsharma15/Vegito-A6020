@@ -126,10 +126,10 @@
 				qcom,bus-freq = <4>;
 			};
 
-			/* *** Fabryczna częstotliwość *** */
+			/* *** Fabryczna częstotliwość pomniejszona o 5 MHz *** */
 			qcom,gpu-pwrlevel@3 {
 				reg = <3>;
-				qcom,gpu-freq = <465000000>;
+				qcom,gpu-freq = <460000000>;
 				qcom,bus-freq = <3>;
 			};
 
@@ -138,10 +138,11 @@
 				qcom,gpu-freq = <400000000>;
 				qcom,bus-freq = <2>;
 			};
-
+			
+			/* *** Zmienione z fabrycznych 220 na 200 MHz *** */
 			qcom,gpu-pwrlevel@5 {
 				reg = <5>;
-				qcom,gpu-freq = <220000000>;
+				qcom,gpu-freq = <200000000>;
 				qcom,bus-freq = <1>;
 			};
 
