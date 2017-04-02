@@ -107,26 +107,32 @@
 			#size-cells = <0>;
 
 			compatible = "qcom,gpu-pwrlevels";
-
+			
 			qcom,gpu-pwrlevel@0 {
+				reg = <0>;
+				qcom,gpu-freq = <550000000>;
+				qcom,bus-freq = <4>;
+			};
+
+			qcom,gpu-pwrlevel@1 {
 				reg = <0>;
 				qcom,gpu-freq = <465000000>;
 				qcom,bus-freq = <3>;
 			};
 
-			qcom,gpu-pwrlevel@1 {
+			qcom,gpu-pwrlevel@2 {
 				reg = <1>;
 				qcom,gpu-freq = <400000000>;
 				qcom,bus-freq = <2>;
 			};
 
-			qcom,gpu-pwrlevel@2 {
+			qcom,gpu-pwrlevel@3 {
 				reg = <2>;
 				qcom,gpu-freq = <220000000>;
 				qcom,bus-freq = <1>;
 			};
 
-			qcom,gpu-pwrlevel@3 {
+			qcom,gpu-pwrlevel@4 {
 				reg = <3>;
 				qcom,gpu-freq = <19200000>;
 				qcom,bus-freq = <0>;
